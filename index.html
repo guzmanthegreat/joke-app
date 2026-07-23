@@ -1,29 +1,29 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joke API</title>
-    <link rel="stylesheet" href="style.css"/>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
     <main class="joke-container">
-        <p id="jokeSetup"></p>
-        <h1 id="jokePunchline"></h1>
-        <div id="buttons">
-            <button id="punchlineButton">
-                <span class="shadow"></span>
-                <span class="edge"></span>
-                <span class="front text">Punchline</span>
-                <audio id="punchlineAudio" src="punchline.mp3"></audio>
-            </button>
-            <button id="newJokeButton">
-                <span class="shadow"></span>
-                <span class="edge"></span>
-                <span class="front text">New Joke</span>
-            </button>
-        </div>
-        <script src="script.js" defer></script>
+      <p id="jokeSetup"></p>
+      <h1 id="jokePunchline"></h1>
+      <div id="buttons">
+        <button id="punchlineButton">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front text">Punchline</span>
+          <audio id="punchlineAudio" src="punchline.mp3"></audio>
+        </button>
+        <button id="newJokeButton">
+          <span class="shadow"></span>
+          <span class="edge"></span>
+          <span class="front text" id="newJokeButtonText">New Joke</span>
+        </button>
+      </div>
+      <script src="script.js" defer></script>
     </main>
-</body>
+  </body>
 </html>

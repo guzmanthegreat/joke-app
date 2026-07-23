@@ -13,12 +13,11 @@
             jokePunchline.textContent = "";
 
             //api call
-            //const response = await fetch("https://official-joke-api.appspot.com/random_joke");
-            response = "Knock Knock"
+            const response = await fetch("https://official-joke-api.appspot.com/random_joke");
 
-            /*if (!response.ok) {
+            if (!response.ok) {
                 throw new Error("Error during request")
-            }*/
+            }
 
             const data = await response.json();
             

@@ -13,7 +13,7 @@
             jokePunchline.textContent = "";
 
             //calls api and returns joke
-            //const response = await fetch("https://official-joke-api.appspot.com/random_joke");
+            const response = await fetch("https://official-joke-api.appspot.com/random_joke");
             
             if (!response.ok) {
                 throw new Error("The request got fucked up :(")

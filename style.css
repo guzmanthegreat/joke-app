@@ -11,11 +11,31 @@ body {
     text-align: center;
 }
 
+@media (hover: hover) {
+    button:hover {
+        filter: brightness(110%);
+    }
+
+    button:hover .front {
+        transform: translateY(-6px);
+        transition: transform
+        250ms
+        cubic-bezier(.3, .7, .4, 1.5);
+    }
+    button:hover .shadow {
+        transform: translateY(4px);
+        transition: transform
+            250ms
+            cubic-bezier(.3, .7, .4, 1.5);
+    }
+}
+
 button {
  position: relative;
  border: none;
  background: transparent;
  padding: 0;
+ margin: 6px 0px;
  cursor: auto;
  outline-offset: 4px;
  transition: filter 250ms;
@@ -70,27 +90,12 @@ button {
     cubic-bezier(.3, .7, .4, 1);
 }
 
-button:hover {
- filter: brightness(110%);
-}
 
-button:hover .front {
- transform: translateY(-6px);
- transition: transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
-}
+
 
 button:active .front {
- transform: translateY(-2px);
- transition: transform 34ms;
-}
-
-button:hover .shadow {
- transform: translateY(4px);
- transition: transform
-    250ms
-    cubic-bezier(.3, .7, .4, 1.5);
+    transform: translateY(-2px);
+    transition: transform 34ms;
 }
 
 button:active .shadow {
@@ -106,3 +111,9 @@ button:focus:not(:focus-visible) {
     min-height: 2.4em;
     line-height: 1.2;
 }
+
+#buttons {
+    display: flex;
+    flex-direction: column;
+}
+

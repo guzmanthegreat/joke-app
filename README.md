@@ -4,7 +4,7 @@ A web app built from scratch with vanilla HTML, CSS, and JavaScript. No framewor
 
 > Purpose was to experiment with APIs — 
 
-Live site: [guzmanthegreat.github.io/personal-website](https://guzmanthegreat.github.io/joke-app/)
+Live site: [Click here](https://guzmanthegreat.github.io/joke-app/)
 
 ## Built With
 
